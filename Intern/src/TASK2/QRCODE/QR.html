@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="QR.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsqr/1.4.0/jsQR.min.js"></script>
+</head>
+<body>
+<div class="scanner-app">
+    <h2>QR Code Scanner</h2>
+    <video id="camera" autoplay></video>
+    <canvas id="canvas" hidden></canvas>
+    <p id="result">Scan a QR Code</p>
+    <button id="openLink" hidden>Open Link</button>
+</div>
+<script src="QR.js"></script>
+</body>
+</html>

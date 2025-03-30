@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Scraper</title>
+    <link rel="stylesheet" href="csv.css">
+</head>
+<body>
+<h2>Product Scraper</h2>
+<button onclick="fetchProducts()">Fetch Products</button>
+<button onclick="downloadCSV()">Download CSV</button>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Rating</th>
+    </tr>
+    </thead>
+    <tbody id="productTable">
+    </tbody>
+</table>
+<script src="csv.js"></script>
+</body>
+</html>

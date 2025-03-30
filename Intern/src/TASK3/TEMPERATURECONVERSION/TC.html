@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="TC.css">
+</head>
+<body>
+<div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="converter">
+        <div class="input-group">
+            <input type="number" id="temperature" placeholder="Enter temperature" step="0.01">
+            <select id="unit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+        <button id="convert-btn">Convert</button>
+
+        <div class="results">
+            <div class="result-card">
+                <h2>Celsius (°C)</h2>
+                <p id="celsius-result">-</p>
+            </div>
+            <div class="result-card">
+                <h2>Fahrenheit (°F)</h2>
+                <p id="fahrenheit-result">-</p>
+            </div>
+            <div class="result-card">
+                <h2>Kelvin (K)</h2>
+                <p id="kelvin-result">-</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="TC.js"></script>
+</body>
+</html>

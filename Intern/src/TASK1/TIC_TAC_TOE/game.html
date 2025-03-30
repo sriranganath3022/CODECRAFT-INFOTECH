@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="container">
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="status" id="status">Player X's turn</div>
+
+    <div class="game-board" id="board">
+        <div class="cell" data-cell-index="0"></div>
+        <div class="cell" data-cell-index="1"></div>
+        <div class="cell" data-cell-index="2"></div>
+        <div class="cell" data-cell-index="3"></div>
+        <div class="cell" data-cell-index="4"></div>
+        <div class="cell" data-cell-index="5"></div>
+        <div class="cell" data-cell-index="6"></div>
+        <div class="cell" data-cell-index="7"></div>
+        <div class="cell" data-cell-index="8"></div>
+    </div>
+
+    <button id="restartButton">Restart Game</button>
+
+    <div class="game-mode">
+        <h3>Game Mode</h3>
+        <div class="mode-toggle">
+            <button id="twoPlayerBtn" class="active">Two Player</button>
+            <button id="aiPlayerBtn">vs AI</button>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <span>X (Player 1)</span>
+            <span id="scoreX">0</span>
+        </div>
+        <div class="score">
+            <span>Ties</span>
+            <span id="scoreTie">0</span>
+        </div>
+        <div class="score">
+            <span>O (Player 2)</span>
+            <span id="scoreO">0</span>
+        </div>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

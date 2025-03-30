@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="ngg.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>Number Guessing Game</h1>
+    <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+
+    <div class="input-group">
+        <input type="number" id="guess" min="1" max="100" placeholder="Your guess">
+        <button id="submit-btn">Guess</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="progress-container">
+        <span class="range-value">1</span>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <span class="range-value">100</span>
+    </div>
+
+    <p>Attempts: <span id="attempts">0</span></p>
+
+    <div class="result" id="result-message"></div>
+    <button class="restart-btn" id="restart-btn">Play Again</button>
+</div>
+
+<script src="ngg.js"></script>
+</body>
+</html>
